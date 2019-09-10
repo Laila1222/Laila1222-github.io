@@ -1,0 +1,71 @@
+body{
+    padding-top: 3rem;
+}
+
+.to-bottom {
+    top:70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+#intro, #about, #portfolio, #contact {
+    min-height: 90vh;
+    padding-top: 3rem;
+}
+
+.satisfy {
+    font-family: 'Satisfy', cursive;
+}
+
+.catamaran {
+    font-family: 'Catamaran', sans-serif;
+}
+
+p, a, input, button {
+    font-family: 'Catamaran', sans-serif;
+    
+}
+
+h1, h2 {
+    font-family: 'Satisfy', cursive;
+}
+
+#intro-back {
+    background-image: url('./images/maountain2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+
+}
+
+.textarea {
+    height: 10rem;
+}
+
+.center {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar .navbar-toggler {
+    border-color: transparent; /* Removes border color */
+  }
+
+
+.modal-body {
+    height: auto;
+}
+
+iframe { 
+    height: auto;
+}
+
+.inner-modal-body {
+    height: 80vh;
+}
+
+
