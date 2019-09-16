@@ -8,6 +8,7 @@ const cssImageWrappedDiv = document.querySelector('#images-wrapper-css');
 
 
 function appendInnerHtml (el, arrayEl) {
+    console.log(arrayEl.image);
     el.innerHTML = `
                 <a data-toggle="modal"  href=#${arrayEl.id}><img src="${arrayEl.image}" alt="images" class="w-75 shadow"></a>
                 <div class="modal fade" id="${arrayEl.id}" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true" >
@@ -50,7 +51,6 @@ function renderModals (sites, div, kepek) {
         imageDiv.className = "col-12 col-md-6 flash-hover py-5";
         div.appendChild(imageDiv);
         appendInnerHtml(imageDiv, site);
-        console.log(kepek)  
     })
 };
 
@@ -66,4 +66,4 @@ const openNewTab = (link) => {
 
 
 renderModals(sitesJavaScript, jsImageWrapperDiv);
-renderModals(sitesHtmlCss, cssImageWrappedDiv, sitesHtmlCss.image);
+renderModals(sitesHtmlCss, cssImageWrappedDiv);
