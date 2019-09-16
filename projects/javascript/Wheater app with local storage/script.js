@@ -166,7 +166,7 @@ function initMap (coordLat, coordLng) {
     center: location,
   });
   mapDiv.style.display = 'block';
-  console.log (location);
+  // console.log (location);
 }
 
 //Change background picture and colour according to weather

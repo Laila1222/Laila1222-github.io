@@ -75,7 +75,7 @@ class ShoppingCart {
     // Check if added product is already added to cart
     let exists = Boolean;
     for (let i = 0; i < this.products.length; i++) {
-      console.log (this.products[i].name);
+      // console.log (this.products[i].name);
       if (this.products[i].name === productName) {
         exists = true;
       }
@@ -114,7 +114,7 @@ class ShoppingCart {
 
   removeAllProducts () {
     this.products = [];
-    console.log (this.producst);
+    // console.log (this.producst);
   }
 
   //   searchProduct (productName) {
@@ -181,13 +181,13 @@ class ShoppingCart {
       })
       .then (userName => {
         if (!userName) {
-          console.log ('nemjó');
+          console.log ('undefined');
         } else {
           usernameDisplay.innerHTML = 'Shoppingcart of ' + userName;
         }
       })
       .catch (error => {
-        console.log (error);
+        // console.log (error);
         usernameDisplay.innerHTML = 'Dont find username.';
       });
   }
