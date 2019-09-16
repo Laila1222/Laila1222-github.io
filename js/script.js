@@ -44,12 +44,13 @@ function appendInnerHtml (el, arrayEl) {
 
 
 
-function renderModals (sites, div) {
+function renderModals (sites, div, kepek) {
     sites.forEach((site) => {
         const imageDiv = document.createElement('div');
         imageDiv.className = "col-12 col-md-6 flash-hover py-5";
         div.appendChild(imageDiv);
-        appendInnerHtml(imageDiv, site);  
+        appendInnerHtml(imageDiv, site);
+        console.log(kepek)  
     })
 };
 
@@ -65,4 +66,4 @@ const openNewTab = (link) => {
 
 
 renderModals(sitesJavaScript, jsImageWrapperDiv);
-renderModals(sitesHmlCss, cssImageWrappedDiv);
+renderModals(sitesHtmlCss, cssImageWrappedDiv, sitesHtmlCss.image);

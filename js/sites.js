@@ -1,4 +1,4 @@
-const sitesHmlCss = [
+const sitesHtmlCss = [
 
     {
         "name": "office",
