@@ -5,14 +5,14 @@ const sitesHmlCss = [
         "id": "office",
         "url": "https://laila1222.github.io/lillaKorosi.github.io/projects/html-css/week2/Webpage%20with%20css/index.html",
         "codesUrl": "https://github.com/Laila1222/Laila1222-github.io/blob/master/hyf-homework/html-css/week2/index.html",
-        "image": "./images/travel-goat.jpg"
+        "image": "./images/weather.jpg"
     },
     {
         "name": "travel-goat",
         "id": "travelGoat",
         "url": "https://laila1222.github.io/lillaKorosi.github.io/projects/html-css/week3/index2.html",
         "codesUrl": "https://github.com/Laila1222/lillaKorosi.github.io/blob/master/projects/html-css/week3/index2.html",
-        "image": "./images/travel-goat.jpg"
+        "image": "./images/weather.jpg"
     },
 
 
