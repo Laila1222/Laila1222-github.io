@@ -1,5 +1,4 @@
 const sitesHtmlCss = [
-
     {
         "name": "office",
         "id": "office",
@@ -14,9 +13,6 @@ const sitesHtmlCss = [
         "codesUrl": "https://github.com/Laila1222/lillaKorosi.github.io/blob/master/projects/html-css/week3/index2.html",
         "image": "./images/travelGoat.jpg"
     },
-
-
-
 ];
 
 const sitesJavaScript = [
@@ -48,5 +44,4 @@ const sitesJavaScript = [
     "codesUrl": "https://github.com/Laila1222/lillaKorosi.github.io/blob/master/projects/javascript/ShoppingCart/index.html",
     "image": "./images/shoppingcart.jpg"
 }
-
 ];

@@ -1,44 +1,29 @@
-html {
-    scroll-behavior: smooth;
-}
+html {scroll-behavior: smooth;}
 
-body{
-    padding-top: 3rem;
-}
+/* Font families */
+.catamaran {font-family: 'Catamaran', sans-serif;}
 
+p, a, input, button {font-family: 'Catamaran', sans-serif;}
+
+h1, h2 {font-family: 'Satisfy', cursive;}
+
+body{padding-top: 3rem;}
+
+/* Extra padding-bottom */
+.pb-larger {padding-bottom: 5rem;}
+
+/* Moving "welcome text" */
 .to-bottom {
     top:70%;
     left: 40%;
     transform: translate(-50%, -50%);
 }
 
-#contact {
-    min-height: 100vh;
-    padding-top: 3rem;
-}
+/* Nav */
+.navbar .navbar-toggler {border-color: transparent;}
 
-#about {
-    min-height: 90vh;
-}
-
-.satisfy {
-    font-family: 'Satisfy', cursive;
-}
-
-.catamaran {
-    font-family: 'Catamaran', sans-serif;
-}
-
-p, a, input, button {
-    font-family: 'Catamaran', sans-serif;
-    
-}
-
-h1, h2 {
-    font-family: 'Satisfy', cursive;
-}
-
-#intro-back {
+/* Intro part */
+#intro-background {
     background-image: url('../images/mountain.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -46,42 +31,16 @@ h1, h2 {
     height: 75%;
 }
 
-#intro {
-    min-height: 70vh;
-}
+#intro {min-height: 70vh;}
 
-.textarea {
-    height: 10rem;
-}
+/* Modal and iframe */
+.modal-body {height: auto;}
 
-.center {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+iframe {height: auto;}
 
-.navbar .navbar-toggler {
-    border-color: transparent; /* Removes border color */
-  }
+.inner-modal-body {height: 80vh;}
 
-
-.modal-body {
-    height: auto;
-}
-
-iframe { 
-    height: auto;
-}
-
-.inner-modal-body {
-    height: 80vh;
-}
-
-.pb-larger {
-    padding-bottom: 5rem;
-}
-
+/* Hover on images */
 .flash-hover a:hover img {
     opacity: 1;
 	-webkit-animation: flash 1.5s;
@@ -103,5 +62,8 @@ iframe {
 		opacity: 1;
 	}
 }
+
+/* About part */
+#about {min-height: 90vh;}
   
 
