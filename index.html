@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio Lilla Kőrösi</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Catamaran|Satisfy&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="customStyle.css">
+    <link rel="stylesheet" href="./style/customStyle.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="script.js" async></script>
-    <script src="sites.js"></script>
+    <script src="./js/script.js" async></script>
+    <script src="./js/sites.js"></script>
+    <script src="https://kit.fontawesome.com/ce69cf514d.js"></script>
 </head>
-<body>
+<body id="body">
     
-
-    </div>
-    <header class="pb-5">
+    <header>
         <div id="intro-back">
             <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light border">
                 <div class="container">
@@ -59,133 +59,92 @@
         </div>
     </header>
     
+    <section id="portfolio" class="bg-light text-center">
+        <div class=" pt-3 pb-2">
+            <h2 class="h1 pt-5 pb-2">Portfolio</h2>
+            <h4 class="catamaran pb-3">Below you can see some of my projects I have been worked on lately.</h4>  
+        </div>
+            
+            
+            <div class="pt-5 pb-larger">
+                <h3 class="pt-2 pb-5">HTML/CSS</h3>
+                
+                <div id="images-wrapper-css" class="d-flex flex-wrap">
+                    <!-- Render content and modal with js -->
+                </div> 
+            </div>
     
+            <div class="pb-larger">
+                <h3 class="pt-2 pb-5">JavaScript</h3>
+                
+                <div id="images-wrapper-js" class="d-flex flex-wrap">
+                     <!-- Render content and modal with js -->
+                </div>    
+             </div>
+    
+        </section>
 
     
 
-    <section id="about" class="container text-center pt-5 position-relative">
-        <div class="">
+    <section id="about" class=" text-center py-5 position-relative">
+        <div class="container">
 
         
             <div class="pb-5">
                 <h2 class=" h1 py-5">About me</h2>
                 <p class="h4 w-75 mx-auto">I am a front end developer living in Copenhagen, Denmark, with high interest in user interface and experience, as well as web design.</p>
-            </div>  
-            <div class="pb-5">
-                <h3 class="h5">Technologies I work with</h3>
-                <ul class="list-unstyled">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap4</li>
-                    <li>Node.js</li>
-                </ul>
-                <!-- <p>HTML5, CSS3, JavaScript, BootStrap4, Node.js</p> -->
             </div> 
-            <div class="pb-3">
-                <h3 class="h5">Softwares I use</h3>
-                <ul class="list-unstyled">
-                    <li>
-                        Visual Studio Code
-                    </li>
-                    <li>Git</li>
-                    <li>Figma</li>
-                    <li>PhotoShop</li>
-                    <li>PostMan</li>
-                    <li>Command Line</li>
-                </ul>
-                <!-- <p>Visual Studio Code, Git, Figma, PhotoShop, PostMan, Command Line</p> -->
+
+            <div class="row pb-5">
+
+                <div class="col-12 col-sm-6 pb-2">
+                    <h3 class="h5 pb-1">Technologies I work with</h3>
+                    <ul class="list-unstyled">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap4</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div> 
+
+                <div class="col-12 col-sm-6">
+                    <h3 class="h5 pb-1">Softwares I use</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            Visual Studio Code
+                        </li>
+                        <li>Git</li>
+                        <li>Figma</li>
+                        <li>PhotoShop</li>
+                        <li>PostMan</li>
+                        <li>Command Line</li>
+                    </ul>
+                </div>
+
             </div>
+            
             <div>
                 <p>In me you will find a cheerful and easy person</p>
             </div>
             <div>
                 <div>
                     <ul class="list-unstyled d-flex justify-content-center">
-                        <li class="px-2"><a href="" class="link-item">GitHub</a></li>
-                        <li class="px-2"><a href="">LinkedIn</a></li>
+                        <li class="px-2"><a href="mailto:korosililla@gmail.com"></a><i class="fas fa-envelope-square fa-2x text-primary"></i></li>
+                        <li class="px-2"><a href="tel:+4550116914"><i class="fas fa-phone-square-alt fa-2x text-primary"></i></a></li>
+                        <li class="px-2"><a href="" class="link-item"><i class="fab fa-github-square fa-2x text-primary"></i></a></li>
+                        <li class="px-2"><a href=""><i class="fab fa-linkedin fa-2x text-primary"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="container text-center">
-        <h2 class="h1 py-5">Portfolio</h2>
-        <div class="pb-5">
-            <h3 class="py-3">HTML/CSS</h3>
-            <!-- ---Carousel html-css --- -->
-            <div id="carousel-html" class="carousel slide " data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-html" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-html" data-slide-to="1"></li>
-                    <li data-target="#carousel-html" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner ">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col">
-                                <a href="../Webpage with css/index.html"><img src="./images/P8170178.JPG" alt="" class="d-block w-100"></a>
-                            </div>
-                            <div class="col">
-                                <img src="./images/P7202144.JPG" alt="" class="d-block w-100">
-                            </div>
-                                <div class="col">
-                                <img src="./images/P7190889.JPG" alt="" class="d-block w-100">
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carousel-html" role="button" data-slide:"prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-html" role="button" data-slide:"next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+    
 
-            </div>
-        </div>
-        <div class="pb-5">
-            <h3 class="py-3">JavaScript</h3>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div id="images-wrapper" class="row">
-                            <!-- <div class="col"> -->
-                                <!-- <img src="./images/P8170178.JPG" alt="" class="d-block w-100">
-                            </div>
-                            <div class="col">
-                                <img src="./images/P7202144.JPG" alt="" class="d-block w-100">
-                            </div>
-                                <div class="col">
-                                <img src="./images/P7190889.JPG" alt="" class="d-block w-100"> -->
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
+    
 
-    </section>
-
-    <section id="contact" class="container text-center">
+    <!-- <section id="contact" class="container text-center">
         <h2 class="py-3 h1">Contact</h2>
         <div class="p-5">
                 <div class="">
@@ -194,24 +153,21 @@
                     </p>
                     
                     </div>
-            <form action="">
+            <form action="https://mailthis.to/korosililla@gmail.com"
+            method="POST" encType="multipart/form-data" id="contactForm">
                 <fieldset class="form-group">
                     <div class="row w-100 mx-auto">
-                        <div class="form-group col-12 w-100 ">
-                            <label class="form-control-label d-block" for="first-name">First Name *</label>
-                            <input type="text" id="first-name" class="form-control mx-auto mb-5 w-75">
+                        <div class="form-group col-12 w-100">
+                            <label for="name" class="form-control-label d-block">Your name*</label>
+                            <input type="text" id="name" class="form-control mx-auto mb-2 w-75" name="name">
                         </div>
                         <div class="form-group col-12 w-100">
-                            <label class="form-control-label d-block" for="last-name">Last Name *</label>
-                            <input type="text" id="last-name" class="form-control mx-auto mb-5 w-75">
+                            <label class="form-control-label d-block" for="email">Your email*</label>
+                            <input type="email" id="email" name="_replyto" class="form-control mx-auto mb-2 w-75 ">
                         </div>
                         <div class="form-group col-12 w-100">
-                            <label class="form-control-label d-block" for="email">Email *</label>
-                            <input type="text" id="email" class=" form-control form-control-success mx-auto mb-5 w-75 ">
-                        </div>
-                        <div class="form-group col-12 w-100">
-                            <label class="form-control-label d-block" for="text">Message *</label>
-                            <textarea type="text" id="text" class="mx-auto mb-5 w-75 textarea"></textarea>
+                            <label class="form-control-label d-block" for="text">Message*</label>
+                            <textarea type="text" name="message" id="text" class="mx-auto mb-2 w-75 textarea form-control " rows="6"></textarea>
                         </div>
                         <div class="form-group col-12 w-100">
                             <button type="submit" class="btn btn-info">Send</button>
@@ -222,45 +178,16 @@
             </form>
         </div>
 
-    </section>
+    </section> -->
 
-    <a  class="" data-toggle="modal" href=#modal>Click</a>
 
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true" >
-        <div class="modal-dialog modal-lg" role="document">
-            <!-- Content -->
-            <div class="modal-content">
-                <!-- Body -->
-                <div class="modal-body">
-        
-                    <div  class="embed-responsive embed-responsive-16by9 z-depth-1-half inner-modal-body">
-                            
-                        <iframe class="embed-responsive-item" allowfullscreen  src="https://laila1222.github.io/Laila1222-github.io/hyf-homework/js-projects/weatherApp/Wheater%20app%20with%20local%20storage/index.html" frameborder="0"></iframe>
-                    </div>
-                    
-                </div> <!-- body -->
-                
-                <!-- Footer -->
-                <div class="modal-footer justify-content-center">
-                    <span class="mr-4">blablaa</span>
-                    <button id="iframe-btn"  class="btn-floating btn-sm btn-fb" href="">See Codes on GitHub</button>
-
-                </div>
-
-            </div>
-            
-        </div>
-            
-
-    </div>
     <!-- https://laila1222.github.io/Laila1222-github.io/hyf-homework/html-css/week2/index.html -->
 
-    <footer class="page-footer font-small">
-        <p class="w-100 text-center bg-light py-3 border mb-0">2019</p>
+    <footer class="bg-light page-footer font-small">
+        <p class="w-100 text-center py-3 border mb-0">2019</p>
     </footer>
-    <!-- <div id="footer-image" class="footer fixed-bottom">
-            <img id="grass-image" class="img-fluid" src="./images/footer2.jpg" alt="image">
-    </div> -->
+
+
     
 </body>
 </html>
