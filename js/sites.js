@@ -4,7 +4,7 @@ const sitesHtmlCss = [
         "id": "office",
         "url": "https://laila1222.github.io/lillaKorosi.github.io/projects/html-css/week2/Webpage%20with%20css/index.html",
         "codesUrl": "https://github.com/Laila1222/Laila1222-github.io/blob/master/hyf-homework/html-css/week2/index.html",
-        "image": "./images/office.jpg"
+        "image": "./images/office2.jpg"
     },
     {
         "name": "telmore",
