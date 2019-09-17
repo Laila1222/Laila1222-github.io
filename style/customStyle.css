@@ -38,6 +38,10 @@ body{padding-top: 3rem;}
 
 iframe {height: auto;}
 
+.modal-large {
+	width: 85vw;
+}
+
 .inner-modal-body {height: 80vh;}
 
 /* Hover on images */

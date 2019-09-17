@@ -8,6 +8,7 @@ let gameTime;
 let gameStarted = false;
 let countS = 0;
 let countL = 0;
+
 // Event listeners
 selectTime.addEventListener ('change', function () {
   gameTime = selectTime.value;

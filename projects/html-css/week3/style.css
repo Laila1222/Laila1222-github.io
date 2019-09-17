@@ -101,8 +101,9 @@ header img {
 }
 
 /* Navigation */
-
-nav {width: 50%;}
+.menu-sign {
+    display: none;
+}
 
 nav ul li {padding: 1rem;}
 
@@ -440,4 +441,19 @@ height: 100%;
 
 /* Submit button */
 .submit-button {text-align: right;}
+
+/* Media queries */
+@media (max-width: 1024px) {
+    nav ul li {
+        display: none;
+    }
+
+    .menu-sign {
+        display: block;
+    }
+
+    form {
+        width: 90%;
+    }
+}
 

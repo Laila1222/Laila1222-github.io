@@ -7,11 +7,11 @@ const sitesHtmlCss = [
         "image": "./images/office.jpg"
     },
     {
-        "name": "travel-goat",
-        "id": "travelGoat",
+        "name": "telmore",
+        "id": "telmore",
         "url": "https://laila1222.github.io/lillaKorosi.github.io/projects/html-css/week3/index2.html",
         "codesUrl": "https://github.com/Laila1222/lillaKorosi.github.io/blob/master/projects/html-css/week3/index2.html",
-        "image": "./images/travelGoat.jpg"
+        "image": "./images/telmore.jpg"
     },
 ];
 

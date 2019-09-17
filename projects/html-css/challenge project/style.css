@@ -1,0 +1,493 @@
+/* ==== Global rules ==== */ 
+body {
+  font-family:'Open Sans Extrabold', arial;
+  width: 100vw;
+  min-width: 220px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.container {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==== Header ==== */
+
+header {
+  width: 100%;
+  background-color: rgb(6, 40, 185);
+  max-height: 80px; 
+}
+
+/* Header has two parts, left and right header, which are on the two sides of the page. */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 70px;
+}
+
+header li {
+  display: inline-block;
+}
+/* Mit Telemore sign stlye */
+#header-icon-with-text {
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+/* The icons have padding */
+/*.header-right a {
+   padding: 2.4rem 1.8rem;
+} */
+
+header li {
+  padding: 1.5rem 1rem;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Icon size is set, and they are turned into white instead of black */
+.icon-img{
+  width: 25px;
+  filter: invert(100%);
+}
+
+/* Logo: in order not to display the whole picture, which would be too big, it is in a div, that helps cropping the image. */
+#logo {
+  height: 200px;
+  width: 200px;
+  margin: -70px 0 -80px 0;
+}
+
+#logo-cut-off {
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+}
+
+/* Header icons and their padding become colored when hovered.  */
+.header-icon:hover {
+  filter: invert(30%) grayscale(100%) brightness(90%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+  background: rgb(255, 255, 255, 0.3);
+}
+
+/* ==== Nav-bar ==== */
+/* Background of navigation bar is set. */
+nav {
+  background: rgb(56, 83, 199);
+}
+
+/* The two ul of the navigation bar get margin, padding, width, and are set to the left. */
+nav .primary-ul, nav .dropdown-content {
+  margin: 0 auto 0 auto;
+  padding: .5rem .5rem .5rem .5rem;
+  width: 100%;
+  text-align: left;
+}
+/* The navigation/list items are next to each other - navbar is horizontal */
+nav .nav-item {
+  display: inline-block;
+  padding: 0 3rem 0 0rem;
+}
+
+/* Style of the links in the navigation bar. */
+nav a {
+  color: rgb(255, 255, 255);
+  font-size: .8rem;
+  font-weight: 600;
+  line-height: 1.7rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* When nav links are active, they get a background. */
+nav a:active {
+  background: rgb(27, 41, 100);
+}
+
+/* Nav links on hover get different color */
+nav a:hover {
+  color: rgb(255, 140, 26);
+  transition: color .2s ease-in-out;
+} 
+
+/* 'Menu' is hidden (it will only appear when screen is under 515px width. */
+nav .menu-link {
+  display: none;
+} 
+
+/* ==== MAIN ==== */
+
+/* ---- Offer part ---- */
+
+article {
+  background: black;
+}
+
+
+article img {
+  width: 21.875rem;
+  height: 9.375rem;
+  margin: 2.5rem auto 1.8rem auto;
+}
+/* Headline is 'bolder'. */
+article .offer-headline-1 {
+  font-weight: 900;
+}
+/* Second headline's font-size is set. */
+article .offer-headline-2 {
+  font-size: 1.17rem;
+}
+
+/* 'Skriv dig op'(Sign up)-button: setting color, border, etc., and getting animated.  */
+
+article a {
+  display: inline-block;
+  background-color: rgb(247, 165, 216);
+  padding: 1rem;
+  margin: .5rem;
+  width: 15%;
+  border-radius: 2px;
+  border: solid 1px transparent;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem; 
+  animation-name: animation-1;
+  animation-duration: 5s;
+}
+
+/* Button animation - it changes color (for 5sec after opening the page) */ 
+
+@keyframes animation-1 {
+  0% {background-color: rgb(208, 0, 131);}
+  20% {background-color: rgb(224, 223, 223);}
+  30% {background-color: rgb(208, 0, 131);}
+  40% {background-color: rgb(224, 223, 223);}
+  50% {background-color: rgb(208, 0, 131);}
+  60% {background-color: rgb(224, 223, 223);}
+  70% {background-color: rgb(208, 0, 131);}
+  80% {background-color: rgb(224, 223, 223);}
+  90% {background-color: rgb(208, 0, 131);}
+  100% {background-color: rgb(247, 165, 216);}
+}
+
+/* The 'button' changes background and border color on hover */ 
+article a:hover {
+  background: rgb(252, 207, 231);
+  border: 1px solid rgb(111, 26, 72);
+  border-radius: 4px;
+}
+
+/* The 'button' changes background when being clicked. */
+article a:active {
+  background: rgb(244, 87, 171)
+}
+
+/* Small text style under 'button' */
+article p {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: .8rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* === Subscription part style === */
+.subscription {
+  background: #fff;
+  color: rgb(6, 40, 185);
+  padding: 2rem;
+}
+
+/* Paragraphs get different font-family. */
+.subscription .option p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.subscription-headline-1 {
+  font-size: 2.5rem;
+}
+
+.subscription-headline-2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.subscription .option {
+  padding: 1.5rem;
+  display: inline-block;
+}
+
+.subscription-headline-3 {
+  font-weight: bold;
+  color: rgb(6, 40, 185);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* There's an underlined text ineach option-div */
+.subscription-link p {
+  text-decoration: underline;
+}
+
+/* The underline disappears when hovering on it. */
+.option p:hover {
+  text-decoration: none;
+}
+
+/* Links and icons keep their blue color (they won't turn into purple) */
+.subscription-icon, .subscription-link p {
+  color: rgb(6, 40, 185);
+}
+
+/* When the following parts are active/being clicked, they change color. */
+.option p:active, h3:active, .subscription-icon:active {
+  color: rgb(255, 153, 51);
+}
+
+/* Option-div gets colored when hovered. */
+.option:hover {
+  background-color: rgb(255, 192, 130, 0.3);
+  border-radius: 4px;
+}
+
+/* ====== Green-illustration part ===== */
+
+#green-illustration {
+  background: rgb(13 199 88);
+}
+/* 'Det er smart' - image stays in the middle and has margin. */
+#green-illustration img {
+  margin: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*  ============== Footer style =========== */
+footer {
+  background-color: rgb(6, 40, 185);
+}
+
+footer .container {
+  padding: 3rem;
+}
+
+/* Footer columns are next to each other, have width, start in the same line, etc. */
+footer .column {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+  margin: 1rem;
+}
+
+/* Footer column lists have no list-style. */
+footer .content {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Footer links are styled, and they are block element (under each other). */
+footer a {
+  line-height: 1.7rem;
+  color: #fff;
+  font-size: .8rem;
+  display: block;
+}
+
+footer .footer-headline {
+  margin: 0 0 .8rem 0;  
+  font-size: 1.17rem;
+}
+
+/* When links are clicked, they get orange color. */
+footer a:active {
+  color: rgb(255, 153, 51);
+}
+
+/* When links are hovered, they become underlined. */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ====================================== Media Querries =========================== */
+@media(max-width:1216px) {
+  /* Containers get wider. */
+  .container { 
+    max-width: 90%;
+    width: auto;
+  }
+  /* Navbar is centered */
+  nav .primary-ul, nav .dropdown-content {
+    text-align: center;
+  }
+}
+
+@media(max-width:945px) {
+  /* There are 2 Footer columns next to each other in both lines. */
+  footer .column {
+    padding-right: 2rem;
+  }
+  
+  footer .column {
+    width: 30%;
+  }
+
+  /* 'Mit Telmore' text is not displayed in header. */
+  header #header-text {
+    display: none;
+  }
+}
+
+@media(max-width:515px) {
+  /* Logo becomes smaller */ 
+  #logo-cut-off {
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  }
+
+  /* Logo is smaller, and in line with the header icons */
+  #logo {
+    height: 180px;
+    width: 180px;
+    margin: -100px 0 -90px 0; 
+  }
+
+  /* Header content is 90% wide. */
+  .header-container {
+    width: 90%;
+  }
+
+  /* Header-left and headerl-right are under each other, when there's no more space in one line. */
+  .header-container {
+    flex-wrap: wrap;
+  }
+
+  /* Logo is in the middle of the page. */
+  .header-left {
+    margin-left: auto;
+    margin-right: auto; 
+  }
+
+  /* Header icons are in the middle of the page and get new margin. */
+  header .header-right {
+    margin: .3em auto 0 auto;
+  }
+
+  /* Header icons become smaller, get new padding. */
+  .icon-img, #icon-3-img {
+    width: 22px;
+    padding: .12rem;
+  }
+  
+  /* Header list items including the links get new padding, so they are closer to each other, while further down from the logo with the new margin-top. */
+  header li {
+    padding: .5rem .5rem .5rem .5rem;
+    margin-top: .7rem;
+  }
+
+
+  /* === Nav bar === */
+  /* Nav-items get new padding. */
+  nav ul.dropdown-content li {
+    padding: .5rem;
+  }
+
+  /* List item links are displayed under each other and get new style. */
+  nav .dropdown-content a {
+    display: block;
+    border: 1px solid rgb(140, 191, 241, 0.4);
+    border-radius: 9999px;
+    transition: background .3s ease-in-out;
+    text-align: center;
+  }
+
+  /* 'Menu' is now visible and it has different background-color than the rest of the list items. */
+  nav .menu-link {
+    display: block;
+    border-radius: 9999px;
+    transition: background .3s ease-in-out;
+    text-align: center;
+    background: rgb(140, 191, 241, 0.4);
+  }
+
+   /* Only 'Menu' is visible. */
+  nav ul li.menu ul.dropdown-content {
+    display: none;
+  }
+
+  /* When hovering on 'menu', dropdown content and its list items becomse visible. */
+  nav ul li.menu:hover ul.dropdown-content, nav .nav-item {
+    display: block;
+  }
+  
+  /* ===== Offer part ===== */
+  /* 'Button' is wider */
+  article a {
+    width: 40%;
+  }
+
+  /* Small text is smaller than on big screen. */
+  article p {
+    font-size: 0.75rem;
+  }
+  
+  /* ===== Subscription part =====*/
+  /* Font-size becomes smaller. */
+  .subscription-headline-1 {
+    font-size: 1.562rem;
+  }
+  
+  /* ==== Footer ==== */
+  /* Footer columns are in the middle of the page. */
+  footer .column {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* Footer column becomes wider. */
+  footer .column {
+    width: 80%;
+    padding-right: 0;
+  }
+}
+
+
+@media (max-width: 389px) {
+  /* When the header icons are wrapped under the logo, the logo gets some space/distance from the top of the page. */
+  #logo {
+    height: 165px;
+  }
+}
+
+  
+  

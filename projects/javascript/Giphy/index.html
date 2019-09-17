@@ -8,28 +8,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Find your Gif!</h1>
-        <div class="input-container">
-            <label for="getGif">What gif are you looking for?</label>
-            <input id="searchWord" type="text" name="getGif">
-        </div>
-        <div class="select-container">
-            <label for="selectNumber">How many gifs do you want?</label>
-            <select name="selectNumber" id="numberOfGifs">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-            </select>
-        </div>
+    <div class="container ">
+        <div id="request-gif">
+            <div class="light-background">
+                <h1>Find your Gif!</h1>
+
+                <div class="input-container">
+                    <label for="getGif">What gif are you looking for?</label>
+                    <input id="searchWord" type="text" name="getGif">
+                </div>
+    
+                <div class="select-container">
+                    <label for="selectNumber">How many gifs do you want?</label>
+                    <select name="selectNumber" id="numberOfGifs">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <button >Get your gif!</button>
+
+            </div>
+            
+            
+
+        </div> <!-- request gif -->
         
         
-        <button >Get your gif!</button>
+        
+        
         
         <section id="show-gifs">
             <ul></ul>

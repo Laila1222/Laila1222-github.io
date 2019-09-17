@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Webshop</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Barrio|Mukta|Rosario&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="cssReset.css">
-    
+    <link rel="stylesheet" href="cssReset.css">   
     <link rel="stylesheet" href="style.css">
     
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ce69cf514d.js"></script>
     <script src="script.js" async></script>
 </head>
+
 <body>
     
     <div class="container">
@@ -20,20 +24,20 @@
         <div class="left-side">
                 <header>
                     <h1>Pet and Eat</h1>
+                    <a href="" data-toggle="modal" data-target="#shopping-cart"><i class="fas fa-shopping-cart"></i></a>
                 </header>
-            <div class="left-side-content">
 
+            <div class="left-side-content">
                 <div class="search-field">
                     <button class="input-button">Search for products</button>
                     <input type="text" placeholder="Type product name">
                     <span class="not-found-span">Not found</span>
-                </div>
+                </div> <!-- search-field -->
                 
-
                 <div class="shop-items">
                     <h2>Our products</h2>
                     <ul class="all-products"></ul>
-                </div>
+                </div> <!-- shop items -->
             
                 <div class="modal">
                     <div class="modal-content">
@@ -43,33 +47,44 @@
                         <p></p>
                         <img  alt="image" style="max-width: 200px">
                         <button id='add-to-cart-in-product-info'>Add to cart</button>
-                    </div>
-                </div>
-            </div>
+                    </div> <!-- modal content -->
+                </div> <!-- modal -->
+
+            </div> <!-- left-side-content -->
             
-        </div>
-        <div class="right-side">
-            <div class="shoppingcart-modal">
-                <header class="shoppingcart-header">
-                        <h3>Your shopping cart</h3>
-                        <h4 class="username"></h4>
-                </header>
-                <div class="shoppingcart-modal-content">
+        </div> <!--left side -->
+
+        <div id="shopping-cart" class="right-side modal fade" tabindex="-1" role="dialog" aria-labelledby="shopping-cart-label" aria-hidden="true">
+            <div class="shoppingcart-modal modal-dialog" role="document">
+                
+                <div class="modal-content">
                     
-                    <div class="cart-row">
-                        <span class="cart-item cart-header cart-column"></span>
-                        <span class="cart-price cart-header cart-column"></span>
-                        <span class="cart-quantity cart-header cart-column"></span>
+                    <header class="shoppingcart-header modal-header">
+                            <h3 class="modal-title" id="shopping-cart-label">Your shopping cart</h3>
+                            <h4 class="username"></h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </header>
+
+                    <div class="shoppingcart-modal-content modal-body">
+                        
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column"></span>
+                            <span class="cart-price cart-header cart-column"></span>
+                            <span class="cart-quantity cart-header cart-column"></span>
+                        </div>
+                        <div class="cart-items">
+                            <ul class="shoppingcart-ul"></ul>
+                        </div>
                     </div>
-                    <div class="cart-items">
-                        <ul class="shoppingcart-ul"></ul>
+                    <div class="modal-footer">
+                            <strong class="cart-total-title">Total</strong>
+                            <span class="cart-total-price"></span>
+                            <span class="cart-total-valuta">Dkk</span>
+                        <button class="purchase-button">Purchase</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                     </div>
-                    <div class="cart-total">
-                        <strong class="cart-total-title">Total</strong>
-                        <span class="cart-total-price"></span>
-                        <span class="cart-total-valuta">Dkk</span>
-                    </div>
-                    <button class="purchase-button">Purchase</button>
                 </div>
             </div>
         </div>

@@ -1,10 +1,16 @@
-.containerClickArea {
-    display: flex;
-}
-
 /* Homework for Hack Your Future - JavaScript2 Week 3
 Fastest presser game
 Made by Lilla Kőrösi */
+
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-align: center;
+}
+
 
 body {
     height: 100vh;
@@ -65,13 +71,7 @@ body {
     position: relative;
   }
   
-  .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    text-align: center;
-  }
+
   /* Set game */
   .setGame {
     background-color: rgb(47, 135, 157);
@@ -89,6 +89,11 @@ body {
     margin: 0;
     text-shadow: 1px 1px 1px #082b34;
   }
+
+  /* main/settings  */
+  #settings {
+    padding: 3rem 1rem;
+  }
   
   .start-game-sign {
     padding-left: 2rem;
@@ -97,7 +102,6 @@ body {
   .inlineBlock {
     display: inline-block;
   }
-  /* Select and options */
   
   /* Select time part */
   .select-time {
@@ -108,7 +112,6 @@ body {
     color: #444;
     line-height: 1.3;
     padding: 0.6em 1.4em 0.5em 0.8em;
-  
     max-width: 100%;
     box-sizing: border-box;
     margin: 1rem;
@@ -125,12 +128,15 @@ body {
     background-position: right 0.7em top 50%, 0 0;
     background-size: 0.65em auto, 100%;
   }
+
   .select-time::-ms-expand {
     display: none;
   }
+
   .select-time:hover {
     border-color: #888;
   }
+
   .select-time:focus {
     border-color: #aaa;
     box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
@@ -138,17 +144,20 @@ body {
     color: #222;
     outline: none;
   }
+
   .select-time option {
     font-weight: normal;
   }
   
+
+  /* Keypress area */
   .pressKey {
     padding: 1rem;
     font-family: 'Karma', serif;
     color: white;
     font-size: 2rem;
     font-weight: 100;
-  
+
     -webkit-animation-name: wiggle;
     -ms-animation-name: wiggle;
     -ms-animation-duration: 1000ms;
@@ -277,9 +286,6 @@ body {
   }
   
   /* Display counts and countdown */
-    .counter-area {
-    margin-top: 3rem;
-    }
 
   #countdown {
     color: white;
@@ -315,3 +321,6 @@ body {
     display: flex;
   }
   
+  .containerClickArea {
+    display: flex;
+}
