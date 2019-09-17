@@ -7,7 +7,7 @@ const appendInnerHtml = (el, arrayEl) => {
     el.innerHTML = `
                 <a data-toggle="modal"  href=#${arrayEl.id}><img src="${arrayEl.image}" alt="images" class="w-75 shadow"></a>
                 <div class="modal fade" id="${arrayEl.id}" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true" >
-                    <div class="modal-dialog modal-large" role="document">
+                    <div class="modal-dialog modal-lg" role="document">
                         <!-- Content -->
                         <div class="modal-content">
                             <!-- Body -->
