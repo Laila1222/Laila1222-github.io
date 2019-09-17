@@ -11,7 +11,7 @@ const sitesHtmlCss = [
         "id": "telmore",
         "url": "https://laila1222.github.io/lillaKorosi.github.io/projects/html-css/html-css/challenge%20project/assignment.html",
         "codesUrl": "https://github.com/Laila1222/lillaKorosi.github.io/blob/master/projects/html-css/challenge%20project/assignment.html",
-        "image": "./images/telmore.jpg"
+        "image": "./images/telmore2.jpg"
     },
 ];
 
