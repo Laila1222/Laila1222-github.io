@@ -34,10 +34,11 @@ const appendInnerHtml = (el, arrayEl) => {
             `;
 };
 
-const renderModals = (sites, div) => {
+const renderModals = (sites, div, idName) => {
   sites.forEach (site => {
     const imageDiv = document.createElement ('div');
-    imageDiv.className = 'col-auto flash-hover py-5';
+    imageDiv.id = idName;
+    imageDiv.className = 'col-12 col-sm-6 flash-hover py-5';
     div.appendChild (imageDiv);
     appendInnerHtml (imageDiv, site);
   });
@@ -53,6 +54,10 @@ const openInNewTab = link => {
   // console.log(link);
 };
 
-renderModals (sitesJavaScript, jsImageWrapperDiv);
-renderModals (sitesHtmlCss, cssImageWrappedDiv);
-renderModals (sitesNodejs, nodeImageWrapperDiv);
+renderModals (sitesJavaScript, jsImageWrapperDiv, 'jsDiv');
+renderModals (sitesHtmlCss, cssImageWrappedDiv, 'cssDiv');
+renderModals (sitesNodejs, nodeImageWrapperDiv, 'nodeDiv');
+
+// Place the only nodejs project into middle
+const nodejsDiv = document.querySelector('#nodeDiv');
+nodejsDiv.classList.remove('col-sm-6');
