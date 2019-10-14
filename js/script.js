@@ -1,10 +1,11 @@
 // Variables
-const jsImageWrapperDiv = document.querySelector('#images-wrapper-js');
-const cssImageWrappedDiv = document.querySelector('#images-wrapper-css');
+const jsImageWrapperDiv = document.querySelector ('#images-wrapper-js');
+const cssImageWrappedDiv = document.querySelector ('#images-wrapper-css');
+const nodeImageWrapperDiv = document.querySelector ('#images-wrapper-node');
 
 // Functions
 const appendInnerHtml = (el, arrayEl) => {
-    el.innerHTML = `
+  el.innerHTML = `
                 <a data-toggle="modal"  href=#${arrayEl.id}><img src="${arrayEl.image}" alt="images" class="w-75 shadow"></a>
                 <div class="modal fade" id="${arrayEl.id}" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true" >
                     <div class="modal-dialog modal-lg" role="document">
@@ -22,7 +23,7 @@ const appendInnerHtml = (el, arrayEl) => {
                             
                             <!-- Footer -->
                             <div class="modal-footer justify-content-center">
-                                <span class="mr-4">blablaa</span>
+                                <span class="mr-4">For full experience:</span>
                                 <button id="iframe-codes-btn" onclick="openCodes('${arrayEl.codesUrl}')" class="btn btn-info btn-floating btn-sm" >See Codes on GitHub</button>
                                 <button id="iframe-same-new-tab" onclick="openInNewTab('${arrayEl.url}')" class="btn btn-info btn-floating btn-sm">Open in new tab</button>
                             </div>
@@ -30,28 +31,28 @@ const appendInnerHtml = (el, arrayEl) => {
                         </div> <!-- modal-content -->
                     </div> <!-- modal-dialog -->
                 </div> <!-- modal -->
-            `
-}
+            `;
+};
 
 const renderModals = (sites, div) => {
-    sites.forEach((site) => {
-        const imageDiv = document.createElement('div');
-        imageDiv.className = "col-12 col-md-6 flash-hover py-5";
-        div.appendChild(imageDiv);
-        appendInnerHtml(imageDiv, site);
-    })
+  sites.forEach (site => {
+    const imageDiv = document.createElement ('div');
+    imageDiv.className = 'col-auto flash-hover py-5';
+    div.appendChild (imageDiv);
+    appendInnerHtml (imageDiv, site);
+  });
 };
 // Open link containing codes when clicked
-const openCodes = (link) => {
-    window.open(link, '_blank');
-    // console.log(link);
-}
+const openCodes = link => {
+  window.open (link, '_blank');
+  // console.log(link);
+};
 // Open link in tab when clicked
-const openInNewTab = (link) => {
-    window.open(link, '_blank');
-    // console.log(link);
-}
+const openInNewTab = link => {
+  window.open (link, '_blank');
+  // console.log(link);
+};
 
-
-renderModals(sitesJavaScript, jsImageWrapperDiv);
-renderModals(sitesHtmlCss, cssImageWrappedDiv);
+renderModals (sitesJavaScript, jsImageWrapperDiv);
+renderModals (sitesHtmlCss, cssImageWrappedDiv);
+renderModals (sitesNodejs, nodeImageWrapperDiv);

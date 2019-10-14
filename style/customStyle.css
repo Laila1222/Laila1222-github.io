@@ -5,30 +5,37 @@ html {scroll-behavior: smooth;}
 
 p, a, input, button {font-family: 'Catamaran', sans-serif;}
 
-h1, h2 {font-family: 'Satisfy', cursive;}
+h1, h2, h3 {font-family: 'Abhaya Libre', serif;}
 
 body{padding-top: 3rem;}
 
 /* Extra padding-bottom */
 .pb-larger {padding-bottom: 5rem;}
 
-/* Moving "welcome text" */
-.to-bottom {
-    top:70%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+.place-in-center {
+		width: 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 }
+
+.anchor-center {
+	width: 15vw;
+}
+
 
 /* Nav */
 .navbar .navbar-toggler {border-color: transparent;}
 
 /* Intro part */
-#intro-background {
-    background-image: url('../images/mountain.jpg');
+#intro-background{height: 90vh;}
+
+.background-has-picture {
+	background-image: url('../images/bg4.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75%;
 }
 
 #intro {min-height: 70vh;}

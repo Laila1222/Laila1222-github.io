@@ -30,18 +30,15 @@ const sitesJavaScript = [
     "codesUrl": "https://github.com/Laila1222/lillaKorosi.github.io/blob/master/projects/javascript/Emoji-helper/index.html",
     "image": "./images/emoji-helper.jpeg"
 },
-{
-    "name": "Fastest presser",
-    "id": "presserGame",
-    "url": "https://laila1222.github.io/lillaKorosi.github.io/projects/javascript/Presser%20version2/index.html",
-    "codesUrl": "https://github.com/Laila1222/lillaKorosi.github.io/blob/master/projects/javascript/Presser%20version2/index.html",
-    "image": "./images/presser-game.jpg"
-},
-{
-    "name": "Shopping cart",
-    "id": "shoppingCart",
-    "url": "https://laila1222.github.io/lillaKorosi.github.io/projects/javascript/ShoppingCart/index.html",
-    "codesUrl": "https://github.com/Laila1222/lillaKorosi.github.io/blob/master/projects/javascript/ShoppingCart/index.html",
-    "image": "./images/shoppingcart.jpg"
-}
+
+];
+
+const sitesNodejs = [
+    {
+        "name": "meal-sharing",
+        "id": "mealsharing",
+        "url": "https://hyf-mealsharing.herokuapp.com/",
+        "codesUrl": "https://github.com/Laila1222/meal-sharing",
+        "image": "./images/mealsharing.jpg"
+    }
 ];
