@@ -1,0 +1,27 @@
+@media (max-width: 480px) {
+    .mobile-width {
+        width: 90%;
+    }
+    /* .padding-top-mobile {
+        padding-top: 5rem;
+    } */
+    .mobile-font-2 {
+        font-size: 2rem;
+    }
+
+    .mobile-font-1 {
+        font-size: 1.3rem;
+    }
+
+    .anchor-center-mobile {
+        width: 100%;
+    }
+
+    .place-in-center-mobile {
+        width: 90%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+    }
+}

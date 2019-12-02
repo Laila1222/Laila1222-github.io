@@ -1,5 +1,9 @@
 html {scroll-behavior: smooth;}
 
+body {
+	min-width: 320px;
+}
+
 /* Font families */
 .catamaran {font-family: 'Catamaran', sans-serif;}
 
