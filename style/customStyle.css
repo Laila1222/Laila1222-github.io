@@ -1,80 +1,113 @@
-html {scroll-behavior: smooth;}
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-	min-width: 320px;
+  min-width: 320px;
+}
+
+a {
+	cursor: pointer;
 }
 
 /* Font families */
-.catamaran {font-family: 'Catamaran', sans-serif;}
+.catamaran {
+  font-family: 'Catamaran', sans-serif;
+}
 
-p, a, input, button {font-family: 'Catamaran', sans-serif;}
+p,
+a,
+input,
+button {
+  font-family: 'Catamaran', sans-serif;
+}
 
-h1, h2, h3 {font-family: 'Abhaya Libre', serif;}
+h1,
+h2,
+h3 {
+  font-family: 'Abhaya Libre', serif;
+}
 
-body{padding-top: 3rem;}
+body {
+  padding-top: 3rem;
+}
 
 /* Extra padding-bottom */
-.pb-larger {padding-bottom: 5rem;}
+.pb-larger {
+  padding-bottom: 5rem;
+}
 
 .place-in-center {
-		width: 50%;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .anchor-center {
-	width: 15vw;
+  width: 15vw;
 }
-
 
 /* Nav */
-.navbar .navbar-toggler {border-color: transparent;}
-
-/* Intro part */
-#intro-background{height: 90vh;}
-
-.background-has-picture {
-	background-image: url('../images/bg4.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.navbar .navbar-toggler {
+  border-color: transparent;
 }
 
-#intro {min-height: 70vh;}
+/* Intro part */
+#intro-background {
+  height: 90vh;
+}
+
+.background-has-picture {
+  background-image: url('../images/bg4.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#intro {
+  min-height: 70vh;
+}
 
 /* Modal and iframe */
-.modal-body {height: auto;}
+.modal-body {
+  height: auto;
+}
 
-iframe {height: auto;}
+iframe {
+  height: auto;
+}
 
-.inner-modal-body {height: 80vh;}
+.inner-modal-body {
+  height: 80vh;
+}
 
 /* Hover on images */
 .flash-hover a:hover img {
-    opacity: 1;
-	-webkit-animation: flash 1.5s;
-	animation: flash 1.5s;
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
 }
 @-webkit-keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* About part */
-#about {min-height: 90vh;}
-  
+#about {
+  min-height: 90vh;
+}
 
