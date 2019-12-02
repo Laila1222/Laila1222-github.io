@@ -2,6 +2,7 @@
 const jsImageWrapperDiv = document.querySelector ('#images-wrapper-js');
 const cssImageWrappedDiv = document.querySelector ('#images-wrapper-css');
 const nodeImageWrapperDiv = document.querySelector ('#images-wrapper-node');
+const reactImageWrapperDiv = document.querySelector('#images-wrapper-react');
 
 // Functions
 const appendInnerHtml = (el, arrayEl) => {
@@ -57,7 +58,12 @@ const openInNewTab = link => {
 renderModals (sitesJavaScript, jsImageWrapperDiv, 'jsDiv');
 renderModals (sitesHtmlCss, cssImageWrappedDiv, 'cssDiv');
 renderModals (sitesNodejs, nodeImageWrapperDiv, 'nodeDiv');
+renderModals (sitesReact, reactImageWrapperDiv, 'reactDiv');
 
-// Place the only nodejs project into middle
+// Place the one nodejs project into middle
 const nodejsDiv = document.querySelector('#nodeDiv');
 nodejsDiv.classList.remove('col-sm-6');
+
+// Place the one react project into middle
+const reactJsDiv = document.querySelector('#reactDiv');
+reactJsDiv.classList.remove('col-sm-6');

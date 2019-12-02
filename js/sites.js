@@ -42,3 +42,13 @@ const sitesNodejs = [
         "image": "./images/mealsharing.jpg"
     }
 ];
+
+const sitesReact = [
+    {
+        "name": "github-searcher",
+        "id": "github-searcher",
+        "url": "https://hyf-github-searcher.herokuapp.com/",
+        "codesUrl": "https://github.com/Laila1222/github-searcher",
+        "image": "./images/github-searcher.jpg"
+    }
+];
